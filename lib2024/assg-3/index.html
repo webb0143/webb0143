@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 3</title>
+</head>
+<body>
+	<header>
+		<h1>Assignment 3-Victoria Webb</h1>
+	</header>
+	<!-- This is the container of all forms -->
+	<div id="main-container" class="container">
+		<!-- The main section begins -->
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">
+				<!-- This is the text first name form -->
+				<div id="firstn-container" class="html-form">
+					<label for="FirstName">First Name</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name enter here" required>
+				</div>
+				<!-- This is the text last name form -->
+				<div id="lastn-container" class="html-form">
+					<label for="LastName">Last Name</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Last name enter here" required>
+				</div>
+				<!-- This is the email form -->
+				<div id="email-container" class="html-form">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="fakemail@g.com">
+				</div>
+				<!-- This is the password form -->
+				<div id="pass-container" class="html-form">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" placeholder="Enter pswrd here" required>
+				</div>
+				<!-- This is the text summary form -->
+				<div id="introt-container" class="html-form">
+					<label for="summary">Introductory Text</label>
+					<textarea name="summary" id="summary" placeholder="Enter text here"> This is where introductory text can be entered</textarea>
+				</div>
+				<!-- This is the date input form -->
+				<div id="multi-container" class="html-form">
+					<label for="dte">Date of Birth</label>
+					<input type="date" name="dte" id="dte" required><br>
+
+					<!-- This is number input form -->
+
+					<label for="num">Mobile Number</label>
+					<input type="number" name="num" id="num" min="-1" max="20"><br>
+
+					<!-- This is a text address form -->
+
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" placeholder="Enter address here"><br>
+
+					<!-- This is the text postal code form -->
+
+					<label for="pstl-cd">Postal Code</label>
+					<input type="text" name="pstl-cd" id="pstl-cd" placeholder="Enter postal code here">
+				</div>
+				<!-- This is the text city form -->
+				<div id="city-container" class="html-form">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city" placeholder="Enter city here" required>
+				</div>
+				<!--This is the drop down province form  -->
+				<div id="dropd-containter" class="html-form">
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<option value="ontario" selected>Ontario</option>
+						<option value="quebec">Quebec</option>
+						<option value="alberta">Alberta</option>
+						<option value="nova-scotia">Nova Scotia</option>
+						<option value="nunavut">Nunavut</option>
+					</select>
+				</div>
+					<!-- This is the dropdown country form -->
+				<div>
+					<label for="country">Country</label>
+					<select name="country" id="country">
+						<option value="canada" selected>Canada</option>
+						<option value="america">America</option>
+						<option value="mexico">Mexico</option>
+						<option value="cuba">Cuba</option>
+						<option value="ireland">Ireland</option>
+					</select>
+				</div>
+				<!-- This is the radio gender form -->
+				<div id="rad-container" class="html-form">
+					<p>Gender</p>
+					<label for="male">
+						<input type="radio" name="gender-form" id="male" value="male" checked>
+						Male
+					</label>
+					<label>
+						<input type="radio" name="gender-form" id="female" value="female">
+						Female
+					</label>
+				</div>
+				<!-- This is the checkbox hobby form -->
+				<div id="checkb-container" class="html-form">
+					<h3>Hobbies & Interests:</h3>
+					<label for="sports">Sports</label>
+					<input type="checkbox" name="hobbies" id="sports" value="sports"><br>
+
+					<label for="art">Art</label>
+					<input type="checkbox" name="hobbies" id="art" value="art"><br>
+
+					<label for="cooking">Cooking</label>
+					<input type="checkbox" name="hobbies" id="cooking" value="cooking"><br>
+
+					<label for="sleeping">Sleeping</label>
+					<input type="checkbox" name="hobbies" id="sleeping" value="sleeping" checked>
+				</div>
+				<!-- This is the url form -->
+				<div id="url-container" class="html-form">
+					<label for="ur">Website URL:</label>
+					<input type="url" name="ur" id="ur">
+				</div>
+				<!-- This is the submit button -->
+				<button type="submit">Submit</button>
+				<!-- This is the reset button -->
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
