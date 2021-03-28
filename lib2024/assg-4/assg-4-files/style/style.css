@@ -44,6 +44,7 @@ table {
 	border-spacing: 0;
 }
 
+/*Clearfix reset*/
 
 .clearfix:after {
 	content: "";
@@ -52,59 +53,72 @@ table {
 }
 
 
+/*Color Pallete
+
+	Green: #7cc576
+	Blue: #6dcff6
+	Black: #000000
+	White: #ffffff*/
+
+
 html {
-  box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  	box-sizing: inherit;
 }
 
+/*logo styling*/
 .logo {
 	float: left;
-	width: 160px;
+	width: 170px;
 	box-sizing: border-box;	
 }
 
-
+/*header section styling*/
 header {
 	background-color: #7cc576;
 	width: 100%;
 	padding: 30px;
+	box-sizing: border-box;
 	
 }
+
+/*navigation box section styling*/
 
 .main-nav {
 	float: left;
 	width: 100%;
-	padding: 15px;
+	padding: 20px;
 	text-align: center;
 }
 
 
 .link-box {
 	float: left;
-	width:  15%;
-	padding: 25px;
+	width:  20%;
+	padding: 30px;
 	margin: 20px; 
 	background-color: #6dcff6;
 	border-radius: 5px;
-	box-sizing: border-box;
 }
 
+/*link text styling*/
 a {
 	color: #000000;
 	font-weight: bold;
+	font-size: 25px;
 	text-decoration: none;
-	font-size: 20px;
 }
 
-
+/*adding background image*/
 body {
 	width: 100%;
 	background-image: url("../images/beige-tiles.png");
 }
 
+/*h1 text styling*/
 h1 {
 	float: left;
 	padding: 20px;
@@ -113,73 +127,80 @@ h1 {
 	font-size: 40px;
 }
 
+/*h2 text styling*/
+
 h2 {
 	font-weight: bold;
 	font-size: 30px;
 }
 
+/*main body section styling*/
+
 .main {
 	display: block;
 	width: 100%;
-	font-size: 22px;
 	padding: 10px;
-	margin: 15px;
+	margin: 10px;
+	box-sizing: border-box;
+	font-size: 20px;
 }
 
 
+/*sidebar section styling*/
 aside {
-	width: 30%;
+	display: block;
+	float: right;
+	width: 33%;
 	font-size: 20px;
 	padding: 10px;
 	margin: 15px;
-	float: right;
-	display: block;
+	box-sizing: border-box;
 	/*text-align: center;*/
 }
 
+/*sidebar image styling*/
 aside img {
-	width: 100%
-}
-
-
-.images-container {
+	display: block;
 	width: 100%;
-	box-sizing: border-box;
 }
 
-.images-container img {
+/*image gallery styling*/
+.images-container {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+/*image figure styling*/
+
+figure {
 	float: left;
 	width: 30%;
-	padding: 5px;
+	padding: 10px;
+	text-align: center;
 	box-sizing: border-box;
 }
 
-
-footer {
+/*footer section styling*/
+footer { 
 	width: 100%;
-	/*padding: 10px;*/
 	background-color: #7cc576;
 }
 
+/*copyright text styling*/
 .cc-container {
 	font-size: 20px;
 	padding: 15px;
 }
 
+/*footer icon links styling*/
+
 .foot-nav li a {
 	float: right;
 	width: 5%;   
 	padding: 5px;
-	margin-bottom: 30px; 
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 }
-
-/*Color Pallete
-
-	Green: #7cc576
-	Blue: #6dcff6
-	Black: #000000
-	White: #ffffff*/
 
 
 
