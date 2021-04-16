@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>Final-Victoria Webb</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<header class="header clearfix">
+		<!--  -->
+		<div class="logo clearfix">
+		<h1>MY LOGO</h1>
+		</div>
+		<!-- Main navigation -->
+		<nav class=" main-nav desktop-nav">
+			<ul class="nav-links clearfix">
+				<li class="head-links">
+					<a href="home.html">HOME</a>
+				</li>
+				<li class="head-links">
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li class="head-links">
+					<a href="schedule.html">SCHEDULE</a>
+				</li>
+				<li class="head-links">
+					<a href="portfolio.html">PORTFOLIO</a>
+				</li>
+				<li class="head-links">
+					<a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		<!--Mobile navigation  -->
+		<div class="ham"></div>
+		<!-- mobile navigation start -->
+		<div class="mobile-nav-container">
+			<nav class="main-nav mobile-nav">
+			<ul class="nav-links">
+				<li>
+					<a href="home.html">HOME</a>
+				</li>
+				<li>
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="schedule.html">SCHEDULE</a>
+				</li>
+				<li>
+					<a href="portfolio.html">PORTFOLIO</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+
+	<main id="main-section" class="main clearfix">
+		<section>
+		<article id="main-text" class="article col-main">
+			<h2>ABOUT</h2><br>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br>
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+		</section>
+		<!--  -->
+
+		<section class="col-main clearfix">
+			<aside class="img">
+				<img src="img/library.jpg" alt="library">
+	   	 	</aside>
+	    </section>
+		<!--  -->
+		<section id="table-container" class="table col-main clearfix">
+			<h2>SCHEDULE</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>TIME</th>
+						<th>MONDAY</th>
+						<th>TUESDAY</th>
+						<th>WEDNESDAY</th>
+						<th>THURSDAY</th>
+						<th>FRIDAY</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>09:00 - 11:00</td>
+						<td>Communications I</td>
+						<td>Client Services</td>
+						<td>Special Collections</td>
+						<td>Directed Research Seminar</td>
+						<td>Client Services</td>
+					</tr>
+
+					<tr>
+						<td>11:00 - 12:30</td>
+						<td>Reference</td>
+						<td>Internet App</td>
+						<td>Library Software</td>
+						<td>French</td>
+						<td>Reference</td>
+					</tr>
+
+					<tr>
+						<td>14:00 - 15:00</td>
+						<td>Acquisitions</td>
+						<td>General Elective</td>
+						<td>Marketing</td>
+						<td>Emerging Library Tech</td>
+						<td>Library Software</td>
+					</tr>
+
+					<tr>
+						<td>15:30 - 17:30</td>
+						<td>French</td>
+						<td>French</td>
+						<td>Acquisitions</td>
+						<td>Subject Analysis</td>
+						<td>Internet App</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+			<section id="form-container" class="form-value-transfer col-main clearfix">
+			<h2>EDIT PROFILE</h2>
+				<form  id="form" action="submit.php" method="get">
+					<!--  -->
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" placeholder="John Doe" required="">
+					</div>
+					<!--  -->
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" value="filler@gmail.com" required="">
+					</div>
+					<!--  -->
+					<div>
+						<label for="address">Address</label>
+						<input type="text" name="address" id="address" placeholder="111 Mullholland Dr." required="">
+					</div>
+					<!--  -->
+					<div>
+						<label for="city">City</label>
+						<input type="text" name="city" id="city" placeholder="Ottawa" required="">
+					</div>
+					<!--  -->
+					<div>
+						<label for="province">Province</label>
+						<select name="province" id="province">
+							<option value="options" selected>Select Province</option>
+							<option value="ON">Ontario</option>
+							<option value="QC">Quebec</option>
+							<option value="AB">Alberta</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NU">Nunavut</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="BC">British Columbia</option>
+						</select>
+					</div>
+					<!--  -->
+					<div>
+						<label for="postcode">Postal Code</label>
+						<input type="text" name="postcode" id="postcode" placeholder="K1K 123" required="">
+					</div>
+					<!--  -->
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		<!--  -->
+		<section id="profile-card" class=" profile col-main clearfix">
+			<h2>PROFILE INFO</h2>
+				<div id="info-results">
+					<span id="name_result"></span>
+					<span id="email_result"></span>
+					<span id="address_result"></span>
+					<span id="province_result"></span>
+					<span id="postcode_result"></span>
+					MAIL TO, LINK IMG
+				</div>
+		</section>
+	</main>
+
+	<footer class="footer clearfix">
+		<section id="footer-links" class="foot-nav col-footer clearfix">
+			<strong>QUICK LINKS</strong>
+			<nav>
+				<ul>
+					<li>
+						<a href="https://schedule.com">SCHEDULE</a>
+					</li>
+					<li>
+						<a href="https://about.com">ABOUT</a>
+					</li>
+					<li>
+						<a href="https://portfolio.com">PORTFOLIO</a>
+					</li>
+					<li>
+						<a href="https://contact.com">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<!--  -->
+		<section id="foot-social" class="col-footer social-links  clearfix">
+			<strong>FOLLOW US</strong>
+			<nav>
+				<ul class="social-links">
+					<li>
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x"></i></a>
+					<li>
+						<a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<!--  -->
+		<section id="foot-address" class="col-footer info clearfix">
+			<strong>ADDRESS</strong>
+			<p>1385 Woodroffe Ave</p>
+			<p>Nepean,ON K2G 1V8</p>
+			<p>Canada</p>
+		</section>
+	</footer>
+<!-- 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+	<!-- <script type="text/javascript" src="scripts/script.js"></script> -->
+</body>
+</html>
