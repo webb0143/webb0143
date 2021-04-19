@@ -154,7 +154,7 @@ header {
 	}
 
 
-
+/*mobile nav styling*/
 .mobile-nav {
 	width: 100%;
 	clear: both;
@@ -173,24 +173,26 @@ header {
 	border-bottom: 1px solid #000000;
 
 }
-
+/*background image*/
 body {
 	background-image: url("../img/white-waves.png");
 }
 
-
-
-aside, .img {
+/*aside/img styling*/
+.img {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 }
 
-
-table {
-	border-collapse: collapse;
+aside {
+	width: 40%;
+	float:left;
+	box-sizing: border-box;
 }
 
+
+/*table styling*/
  th, tr, td {
 	padding: 15px;
 	border: 1px solid black;
@@ -208,6 +210,7 @@ tr:nth-child(odd) {
   background: #efefef;
 }
 
+/*footer styling*/
 
 footer {
 	background: #454545
@@ -220,7 +223,7 @@ footer {
 	color: #ffffff;
 }
 
-
+/*social media icons styling*/
 .fb {
 	width: 50px;
 	height: 50px;
@@ -260,14 +263,11 @@ footer {
 
 @media only screen and (min-width: 768px) {
 
-	/*header, main, footer {
-
-		min-width: 1280px;
-	}
-*/
 .mobile-nav {
 	display: none;
 }
+
+/*desktop logo styling*/
 
 .logo {
 	display: block;
@@ -286,7 +286,7 @@ footer {
 
 	transition: all 1s ease;
 }
-
+/*hamburger attempt*/
 
 .ham {
 		display: none;
@@ -318,7 +318,7 @@ footer {
 		bottom: 0;
 	}
 
-
+/*header navigation styling*/
 .desktop-nav {
 	display: block;
 	float: left;
@@ -342,29 +342,32 @@ footer {
 	text-decoration: none;
 }
 
-
+/*desktop text styling*/
 .article {
 	display: block;
 	float: left;
     width: 60%;
-	padding: 35px;
-/*	margin: auto;*/
+	padding: 60px;
 	box-sizing: border-box;
 }
 
+aside {
+	padding: 40px;
+}
+
+/*aside img styling*/
 img {
 	display: block;
 	float: right;
 	width: 40%;
-	/*margin: auto;*/
 	padding: 35px;
 	box-sizing: border-box;
 }
 
+/*desktop table styling*/
 
-table, tr, th, td {
+table {
 	border: 1px solid black;
-	border-collapse: collapse;
 }
 
 .table {
@@ -374,6 +377,7 @@ table, tr, th, td {
 	border-collapse: collapse;
 }
 
+/*form styling*/
 form {
 	display: block;
 	float: left;
@@ -395,6 +399,7 @@ input, select {
 	box-sizing: border-box;
 }
 
+/*submit button transition/hover styling*/
 button {
 	width: 80px;
 	padding: 8px;
@@ -405,6 +410,11 @@ button:hover {
 	background-color: #72a9ae; 
 }
 
+.transition-ease-in {
+	transition: all 1s ease-in;
+}
+
+/*profile results styling*/
 #results {
 	display: block;
 	float: right;
@@ -416,20 +426,20 @@ button:hover {
 	box-sizing: border-box;
 }
 
-
+/*desktop footer styling*/
 footer {
 	float: left;
 	width: 100%;
 	padding: 20px;
 	background: #454545;
 }
-
+/*ddesktop-footer navigation*/
 .foot-nav {
 	display: block;
 	float: left;
 	width: 30%;
 	padding: 40px;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 	box-sizing: border-box;
 }
 
@@ -438,6 +448,11 @@ footer {
 	text-decoration: none;
 }
 
+.foot-link-nav {
+	display: inline-block;
+	width: 150px;
+}
+/*footer social media links*/
 .social-links {
 	display: block;
 	float: left;
@@ -445,6 +460,7 @@ footer {
 	padding: 40px;
 	box-sizing: border-box;
 	color: #ffffff;
+	text-align: center;
 }
 
 
@@ -479,7 +495,7 @@ footer {
 	color: #ffffff;
 	background-color: #55acee;	
 }
-
+/*profile icon*/
 .pp {
 	color: #454545;
 }
