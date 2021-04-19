@@ -1,9 +1,31 @@
 window.onload = init;
 
 
+
 function init() {
 
+	$('#form').submit(function (e) {
+		e.preventDefault();
+	});
 
-function showImgLightBox()
+	$("#results").removeClass('reveal');
+	var form = this;
 
+	showformValues(form);
+
+	$("#results").addClass('reveal');
+}
+
+
+function showformValues(form){
+	var formValues = $(form).serializeArray(); 
+		
+	$.each(formValues, function(index, field){
+
+		$("#results").find("#"+field.name+"_result").text(field.value);
+
+		if(field.name=="email"){
+			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
+		}
+	})				
 }
